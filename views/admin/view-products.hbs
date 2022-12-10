@@ -1,0 +1,34 @@
+{{!-- <section>
+   <img src="images/340-206823O13.jpeg" alt="hello">
+</section> --}}
+<section>
+  <div class="container pt-5">
+    <div class="row">
+     
+     <a class="btn btn-danger ml-auto mb-2" href="/admin/add-product">Add Product</a>
+    </div>
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Image</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+    {{#each products}}
+    <tr>
+      <th scope="row"></th>
+      <td>{{this.Name}}</td>
+      <td>{{this.Price}}</td>  
+      <td><img style="width: 50px; height:50px;" src="/images{{this._id}}.jpeg" alt=""></td>
+    {{!-- /home/god/Desktop/projectEcommerce/productImages/images6391a668929c28e711b536a9.jpeg --}}
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>
+</section>
